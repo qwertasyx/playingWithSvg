@@ -1,0 +1,34 @@
+body {
+  background-color: #303030
+}
+#timeline-controls {
+  -ms-flex: 0 0 230px;
+  flex: 0 0 230px;
+  /* background-color: greenyellow;  */
+}
+
+
+#timeline-controls {
+  background-color: #276792
+}
+
+#timeline-tracks {
+  background-color: #862792
+}
+
+.timeline-control:hover {
+  fill: rgb(230, 230, 233);
+  cursor: pointer;
+}
+.timeline-control {
+  fill: rgb(122, 122, 122);
+  stroke: black;
+}
+.majorGrid {
+  fill: none;
+  stroke: black;
+}
+.minorGrid {
+  fill: none;
+  stroke: rgb(85, 85, 85);
+}
