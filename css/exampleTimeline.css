@@ -9,11 +9,11 @@ body {
 
 
 #timeline-controls {
-  background-color: #276792
+  /* background-color: #276792 */
 }
 
 #timeline-tracks {
-  background-color: #862792
+  /* background-color: #862792 */
 }
 
 .timeline-control:hover {
@@ -26,9 +26,12 @@ body {
 }
 .majorGrid {
   fill: none;
-  stroke: black;
+  stroke: rgb(143, 143, 143);
 }
 .minorGrid {
   fill: none;
   stroke: rgb(85, 85, 85);
+}
+.svg-track-text {
+  fill: rgb(214, 214, 214);
 }
