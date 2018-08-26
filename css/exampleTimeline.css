@@ -35,3 +35,10 @@ body {
 .svg-track-text {
   fill: rgb(214, 214, 214);
 }
+.keyframe {
+  fill: rgb(71, 139, 92);
+  cursor: pointer;
+}
+.keyframe:hover {
+  stroke: rgb(255, 255, 255);
+}

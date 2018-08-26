@@ -13,7 +13,7 @@ Timeline.prototype = {
     
     console.log('... timeline init')
   },
-  addTrack: function(animation){
+  addTrack: function(animation,data){
     this._tracks.push(animation)
     var index = this._tracks.length;
     /// animation name 
@@ -26,6 +26,10 @@ Timeline.prototype = {
     this._controls.rect(20,20).addClass('timeline-control').move(230-25,6+this._tracks.length*30).radius(2);
     /// update grid
     this._tracks[index-1]._track = this.drawTrackGrid(index)
+    /// draw Keyframes and reg events
+    data.forEach(element => {
+      this._tracks[index-1].addKeyframe(element);
+    });
     return true
   },
   deleteTrack: function(animation){
